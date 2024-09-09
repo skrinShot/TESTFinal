@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        #user-container {
+            width: 100%;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+
+        form[name="form1"] {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #button {
+            width: 90%;
+            padding: 15px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+
+        .divWithInfo6 {
+
+            width: 35vw;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .userButton {
+            width: 35vw;
+            margin-top: 10px;
+            padding: 10px;
+            background-color:  #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .userButton:hover {
+            background-color:  #007bff;
+        }
+
+        .buttonPost {
+            width: 35vw;
+            text-decoration: none;
+        }
+
+        .popup {
+            width: 90%;
+            height: auto;
+            position: fixed;
+            left: 5%;
+            top: 100px;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 1000px;
+        }
+
+        .popup.hide {
+            display: none;
+        }
+.postContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 10vh;
+
+}
+        .popupContent{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup{
+            display: block;
+            width: 90vw;
+            height: 35vh;
+            position: fixed;
+            left: -999px;
+            top: -999px;
+            background-color: silver;
+            transition: 500ms;
+        }
+        .show{
+            display: block;
+            left: 5vw;
+            top: 50vh;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div id="user-container">
+
+</div>
+
+<form name="form1">
+    <button id="button">Post of current user</button>
+</form>
+
+<div class="popup hide">
+    <div class="popupContent"></div>
+</div>
+
+
+
+
+
+
+
+<script src="user-details.js">
+
+
+</script>
+
+</body>
+</html>
